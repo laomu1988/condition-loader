@@ -71,6 +71,12 @@
 console.log('DEBUG')
     console.log('version > 1 and version < 2')
 
+/*
+#if DEBUG -->
+DEBUG output with /
+#endif
+*/
+
 // DEBUG output with -->
 
 // DEBUG output with * and /

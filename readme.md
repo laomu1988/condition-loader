@@ -2,8 +2,10 @@
 
 Webpack loader that allows text file conditional compilation directly from Webpack.
 
-support javascript、html、vue and any other text file.
-support command #if、#else、#elseif、#endif
+* 支持js、html、vue、css其他任何文本文件(support javascript、html、vue、css and any other text file).
+* 支持命令#if、#else、#elseif、#endif
+* 命令务必独立一行
+* 命令务必包含在注释内，注释现匹配开始字符`<!--` or `//` or `/*` 
 
 ## install
 ```
@@ -79,8 +81,10 @@ module.exports = {
 MIT
 
 ## version
-### 1.0.2
-- remove log;
-- add semicolon before return at the evaluate code 
-### 1.0.0
-- support if,else,elseif,endif command.
+* 1.0.3
+    - 命令前缀检查,匹配开始字符`<!--` or `//` or `/*` 
+* 1.0.2
+    - remove log;
+    - add semicolon before return at the evaluate code 
+* 1.0.0
+    - support if,else,elseif,endif command.

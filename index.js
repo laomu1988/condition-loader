@@ -22,6 +22,10 @@ function parse(source, defs) {
     var index = 0
     var func = 'var __$arr = [];\n'
     source.replace(/(.*)#(if |elseif |else|endif)(.*)(\n|$)/g, function(all, pre, keyword, condition, endLine, startIndex) {
+        if (!/(<!--|\/\/|\/\*)/.test(pre)) {
+            return
+        }
+
         func += `__$arr.push([${index}, ${startIndex}]);`
         index = startIndex + all.length
         keyword = keyword.trim()

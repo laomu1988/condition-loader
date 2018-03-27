@@ -8,6 +8,12 @@ console.log('DEBUG')
     // #endif
 // #endif
 
+/*
+#if DEBUG -->
+DEBUG output with /
+#endif
+*/
+
 // #if DEBUG -->
 // DEBUG output with -->
 // #endif
