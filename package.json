@@ -1,10 +1,10 @@
 {
   "name": "condition-loader",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "webpack conditional loader for any type of text file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "webpack"
   },
   "repository": {
     "type": "git",

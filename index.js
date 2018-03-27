@@ -2,7 +2,7 @@ const loaderUtils = require('loader-utils')
 
 module.exports = function(source, map) {
     const options = loaderUtils.getOptions(this)
-    console.log('loader:', options)
+    // console.log('loader:', options)
     try {
         source = parse(source, options)
         this.callback(null, source, map)
@@ -58,13 +58,13 @@ function parse(source, defs) {
     }
       
     if (index < source.length) {
-        func += `__$arr.push([${index}, ${source.length}])`
+        func += `__$arr.push([${index}, ${source.length}]);`
     }
     func += 'return __$arr;'
       
     var arr = evaluate(func, defs)
     var result = arr.map(position => source.substring(position[0], position[1])).join('')
-    console.log(result)
+    // console.log(result)
     return result
 }
 

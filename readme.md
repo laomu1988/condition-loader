@@ -79,5 +79,8 @@ module.exports = {
 MIT
 
 ## version
+### 1.0.2
+- remove log;
+- add semicolon before return at the evaluate code 
 ### 1.0.0
 - support if,else,elseif,endif command.
