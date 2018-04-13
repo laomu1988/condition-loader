@@ -1,11 +1,10 @@
 const loaderUtils = require('loader-utils')
 
-module.exports = function(source, map) {
+module.exports = function(source) {
     const options = loaderUtils.getOptions(this)
     // console.log('loader:', options)
     try {
-        source = parse(source, options)
-        this.callback(null, source, map)
+        return parse(source, options)
     } catch(err) {
         const errorMessage = `condition-loader error: ${err}`
         this.callback(new Error(errorMessage))

@@ -81,6 +81,8 @@ module.exports = {
 MIT
 
 ## version
+* 1.0.4
+    - 不需要使用map，避免影响webpack-dev-server时缓存
 * 1.0.3
     - 命令前缀检查,匹配开始字符`<!--` or `//` or `/*` 
 * 1.0.2
