@@ -1,6 +1,6 @@
 {
   "name": "condition-loader",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "webpack conditional loader for any type of text file",
   "main": "index.js",
   "scripts": {

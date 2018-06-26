@@ -84,6 +84,8 @@ MIT
 * less等类型文件假如配置了condition-loader，只会对js直接引入的样式文件或者vue文件内部的样式生效，less中再次@import引入的文件只会经过less处理，不会通过condition-loader
 
 ## version
+* 1.0.5
+    - 修复windows的\r\n换行符格式
 * 1.0.4
     - 不需要使用map，避免影响webpack-dev-server时缓存
 * 1.0.3
